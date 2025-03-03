@@ -27,7 +27,7 @@ cd qr-generator
 # Install dependencies
 npm install
 
-
+---
 
 ## Project Structure
 
@@ -40,7 +40,7 @@ npm install
 │── 📄 package.json        # Dependencies
 │── 📄 README.md           # This file
 
-
+---
 
 ## API Usage
 
@@ -48,9 +48,10 @@ Endpoint     Description             Parameters
    |              |                       |
 /generate    Generate QR           type, input, ssid, password
 
-
+---
 
 ## Run The Project
 
 ```bash
+# Start Project in localhost:3000 port
 npm start
