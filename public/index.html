@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Kod Oluşturucu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="container">
+        <h1>QR Kod Oluşturucu</h1>
+        
+        <form id="qr-form">
+            <div class="radio-group">
+                <label class="radio">
+                    <input type="radio" name="type" value="text" checked onclick="toggleFields()"> Metin / Link QR
+                </label>
+                <label class="radio">
+                    <input type="radio" name="type" value="wifi" onclick="toggleFields()"> WiFi QR
+                </label>
+            </div>
+
+            <div id="text-input" class="fade">
+                <input type="text" name="input" id="text" placeholder="Metin veya URL girin" required>
+            </div>
+
+            <div id="wifi-input" class="fade hidden">
+                <input type="text" name="ssid" id="ssid" placeholder="WiFi Adı (SSID)">
+                <input type="text" name="password" id="password" placeholder="Şifre">
+            </div>
+        </form>
+
+        <div class="qr-container">
+            <img id="qr-code" src="" alt="QR Kodu">
+            <a id="download-btn" download="qr-code.png" class="hidden">📥 PNG Olarak Kaydet</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
