@@ -29,7 +29,7 @@ npm install
 
 ---
 
-## **Project Structure**
+### **Project Structure**
 
 📂 qr-generator
 │── 📁 public
@@ -42,7 +42,7 @@ npm install
 
 ---
 
-## **API Usage**
+### **API Usage**
 
 Endpoint     Description             Parameters
    |              |                       |
@@ -52,6 +52,6 @@ Endpoint     Description             Parameters
 
 ## **Run The Project**
 
-``bash
-# Start Project in localhost:3000 port
+```bash
+## Start Project in localhost:3000 port
 npm start
