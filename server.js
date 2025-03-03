@@ -24,5 +24,5 @@ app.get("/generate", (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`🚀 Sunucu çalışıyor: http://localhost:${port}`);
+    console.log(`🚀 Project started at http://localhost:${port}`);
 });

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Kod Oluşturucu</title>
+    <title>QR Code Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,12 +11,12 @@
         <canvas id="canvas"></canvas>
     </div>
     <div class="container">
-        <h1>QR Kod Oluşturucu</h1>
+        <h1>QR Code Generator</h1>
         
         <form id="qr-form">
             <div class="radio-group">
                 <label class="radio">
-                    <input type="radio" name="type" value="text" checked onclick="toggleFields()"> Metin / Link QR
+                    <input type="radio" name="type" value="text" checked onclick="toggleFields()"> Text or URL
                 </label>
                 <label class="radio">
                     <input type="radio" name="type" value="wifi" onclick="toggleFields()"> WiFi QR
@@ -24,18 +24,18 @@
             </div>
 
             <div id="text-input" class="fade">
-                <input type="text" name="input" id="text" placeholder="Metin veya URL girin" required>
+                <input type="text" name="input" id="text" placeholder="Enter text or URL" required>
             </div>
 
             <div id="wifi-input" class="fade hidden">
-                <input type="text" name="ssid" id="ssid" placeholder="WiFi Adı (SSID)">
-                <input type="text" name="password" id="password" placeholder="Şifre">
+                <input type="text" name="ssid" id="ssid" placeholder="WiFi Name (SSID)">
+                <input type="text" name="password" id="password" placeholder="Wifi Password">
             </div>
         </form>
 
         <div class="qr-container">
-            <img id="qr-code" src="" alt="QR Kodu">
-            <a id="download-btn" download="qr-code.png" class="hidden">📥 PNG Olarak Kaydet</a>
+            <img id="qr-code" src="" alt="QR Code">
+            <a id="download-btn" download="qr-code.png" class="hidden">📥 Download PNG</a>
         </div>
     </div>
 
