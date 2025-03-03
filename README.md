@@ -12,46 +12,55 @@ You can generate QR codes for **WiFi credentials, links, or text**, preview them
 
 ---
 
-## **📌 Installation**  
+## 📌 Installation  
 
-### **1️⃣ Install Dependencies**  
+### 1️⃣ Install Dependencies  
 Make sure you have **Node.js** and **npm (Node Package Manager)** installed.  
 If not, [download Node.js here](https://nodejs.org/).  
 
 Then, run the following commands in your terminal:  
 
-```bash
+```
 # Navigate to the project folder
 cd qr-generator
 
 # Install dependencies
 npm install
+```
 
 ---
 
-### **Project Structure**
+## 📌 Project Structure  
 
+```
 📂 qr-generator
 │── 📁 public
 │   ├── 📄 index.html      # Main HTML file
 │   ├── 📄 style.css       # Styling file
 │   ├── 📄 script.js       # QR code generation & animations
-│── 📄 server.js       # Node.js Express server
+│── 📄 server.js           # Node.js Express server
 │── 📄 package.json        # Dependencies
 │── 📄 README.md           # This file
+```
 
 ---
 
-### **API Usage**
+## 📌 API Usage  
 
-Endpoint     Description             Parameters
-   |              |                       |
-/generate    Generate QR           type, input, ssid, password
+| Endpoint    | Description          | Parameters                     |
+|------------|----------------------|--------------------------------|
+| `/generate` | Generate QR code     | `type`, `input`, `ssid`, `password` |
+
+Example:  
+```
+http://localhost:3000/generate?type=wifi&ssid=MyNetwork&password=MyPassword
+```
 
 ---
 
-## **Run The Project**
+## 📌 Run The Project  
 
-```bash
-## Start Project in localhost:3000 port
+```
+# Start the project on localhost:3000
 npm start
+```
